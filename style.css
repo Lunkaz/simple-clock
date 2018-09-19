@@ -1,0 +1,66 @@
+html {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)), url(img/light.jpg);
+    background-size:cover;
+    }
+
+body, .main {
+    margin: 0;
+    display:flex;
+    flex:1;
+    min-height: 100vh;
+    align-items: center;
+    }
+
+.clockbox,
+#clock {
+    width: 100%;
+    margin-right: 8%;
+}
+
+.mid-circle {
+    fill: white;
+}
+.hour-marks {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: white;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: white;
+    stroke-width: 7;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+}
+
+.second-arm {
+    fill: none;
+    stroke: white;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+}
+
+.sizing-box {
+    fill: none;
+}
+
+/* MOVE */
+
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out; 
+}
